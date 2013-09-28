@@ -1,0 +1,41 @@
+  <div id="map"></div>
+
+  <script>
+  	//var map = new WorldMap ({map: 'world_mill_en'});
+    $('#map').vectorMap({
+		map: 'world_mill_en',
+		markers:[
+			{
+		    	fill: 'black',
+		    	stroke: 'grey',
+		    	latLng: [51.6,-106],
+		    	name: 'Canadian Light Source'
+	    	},
+	    	{
+		    	fill: 'black',
+		    	stroke: 'grey',
+		    	latLng: [37,-122],
+		    	name: 'Stanford Synchrotron Radiation Lightsource'
+	    	}
+	    ],
+	    markerStyle: {
+			initial: {
+				fill: 'grey',
+			    stroke: '#505050',
+			    "fill-opacity": 1,
+			    "stroke-width": 1,
+			    "stroke-opacity": 1,
+			    r: 8
+			},
+			hover: {
+				fill: 'orange'
+			},
+			selected: {
+				fill: 'blue'
+			},
+			selectedHover: {
+			}
+	    },
+	    markersSelectable: true
+	});
+  </script>
