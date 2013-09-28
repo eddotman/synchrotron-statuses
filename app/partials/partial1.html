@@ -1,7 +1,9 @@
 <div id="map"></div>
 
-<div id="dialog-modal" title="Synchrotron Info">
-	<p>Information about synchrotron</p>
+<div id="dialog-modal-0" title="Synchrotron Info">
+</div>
+
+<div id="dialog-modal-1" title="Synchrotron Info">
 </div>
 
 <script>
@@ -41,11 +43,13 @@ $('#map').vectorMap({
 		}
     },
     markersSelectable: false,
-    onMarkerClick: function () {
-	    $( "#dialog-modal" ).dialog({
-	      height: 140,
+    onMarkerClick: function (e, code) {
+	    $( "#dialog-modal-" + code ).dialog({
+	      height: 240,
 	      modal: true
 	    });  
+
+	    $("#dialog-modal-" + code).load("partials/content-" + code + ".html");
     }
 });
 </script>
