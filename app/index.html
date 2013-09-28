@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/app.css"/>
   <link rel="stylesheet" href="lib/jquery-jvectormap-1.2.2/jquery-jvectormap-1.2.2.css"/>
-  <link rel="stylesheet" href="lib/jquery.fancybox.css"/>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
 </head>
 <body>
 
@@ -34,14 +34,20 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   -->
   <script src="lib/jquery-1.10.2.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script src="lib/jquery-jvectormap-1.2.2/jquery-jvectormap-1.2.2.min.js"></script>
   <script src="js/jquery-jvectormap-world-mill-en.js"></script>
-  <script src="lib/jquery.fancybox.js"></script>
   <script src="lib/angular/angular.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
+
+  <script>
+    $(document).ready( function() {
+      $('.fancybox').fancybox();
+    });
+  </script>
 </body>
 </html>
