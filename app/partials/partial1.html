@@ -11,18 +11,36 @@
 $('#map').vectorMap({
 	map: 'world_mill_en',
 	markers:[
-		{
-	    	fill: 'black',
-	    	stroke: 'grey',
-	    	latLng: [51.6,-106],
-	    	name: 'Canadian Light Source'
-    	},
-    	{
-	    	fill: 'black',
-	    	stroke: 'grey',
-	    	latLng: [37,-122],
-	    	name: 'Stanford Synchrotron Radiation Lightsource'
-    	}
+		 {latLng: [41.703611, -87.988056], name: 'Advanced Photon Source'},
+		 {latLng: [41.486667, 2.109722], name: 'ABLA'},
+		 {latLng: [52.136806, -106.63125], name: 'Canadian Light Source'},
+		 {latLng: [42.9611, -89.2905], name: 'Synchrotron Radiation Center'},
+		 {latLng: [40.868056, -72.876389], name: 'National Synchrotron Light Source'},
+		 {latLng: [-37.813611, 144.963056], name: 'Australian Synchrotron'},
+		 {latLng: [49.009444, 8.411667], name: 'Angströmquelle Karlsruhe'},
+		 {latLng: [-22.803981, -47.053967], name: 'Laboratório Nacional de Luz Síncrotron'},
+		 {latLng: [51.571667, -1.32], name: 'ISIS neutron source'},
+		 {latLng: [32.109987, 35.736679], name: 'International Centre for Synchrotron-Light for Experimental Science Applications in the Middle East'},
+		 {latLng: [37.8757, -122.2485], name: 'Advanced Light Source'},
+		 {latLng: [40.873346, -72.872057], name: 'National Synchrotron Light Source (NSLS)'},
+		 {latLng: [40.873346, -72.872057], name: 'Alternating Gradient Synchrotron'},
+		 {latLng: [37.418389, -122.200972], name: 'Stanford Synchrotron Radiation Lightsource'},
+		 {latLng: [42.444978, -76.473036], name: 'Cornell Laboratory for Accelerator-based Sciences and Education (CLASSE)'},
+		 {latLng: [48.71, 2.145], name: 'SOLEIL'},
+		 {latLng: [31.190603, 121.583269], name: 'Shanghai Synchrotron Radiation Facility'},
+		 {latLng: [46.233333, 6.05], name: 'Large Hadron Collider'},
+		 {latLng: [52.427778, 13.5325], name: 'BESSY -  Berlin Electron Storage Ring Society for Synchrotron Radiation'},
+		 {latLng: [45.208778, 5.690056], name: 'European Synchrotron Radiation Facility'},
+		 {latLng: [46.231944, 6.048611], name: 'Proton Synchrotron'},
+		 {latLng: [56.167655, 10.198436], name: 'ASTRID (Aarhus STorage RIng in Denmark)'},
+		 {latLng: [45.645167, 13.848667], name: 'ELETTRA'},
+		 {latLng: [55.70937, 13.21003], name: 'MAX-lab'},
+		 {latLng: [51.574444, -1.310833], name: 'Diamond Light Source'},
+		 {latLng: [53.575833, 9.879444], name: 'DORIS (Doppel-Ring-Speicher, "double-ring storage")'},
+		 {latLng: [34.944722, 134.427222], name: 'SPring-8 ( Super Photon Ring – 8 GeV)'},
+		 {latLng: [36.148611, 140.076944], name: 'KEK'},
+		 {latLng: [24.78, 121.013611], name: 'National Synchrotron Radiation Research Center'},
+		 {latLng: [54.883333, 37.216667], name: 'U-70'}
     ],
     markerStyle: {
 		initial: {
@@ -52,4 +70,7 @@ $('#map').vectorMap({
 	    $("#dialog-modal-" + code).load("partials/content-" + code + ".html");
     }
 });
+
+
+
 </script>
