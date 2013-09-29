@@ -6,6 +6,9 @@
 <div id="dialog-modal-1" title="Synchrotron Info">
 </div>
 
+<div id="dialog-modal-2" title="Synchrotron Info">
+</div>
+
 <script>
 	//var map = new WorldMap ({map: 'world_mill_en'});
 $('#map').vectorMap({
@@ -63,8 +66,9 @@ $('#map').vectorMap({
     markersSelectable: false,
     onMarkerClick: function (e, code) {
 	    $( "#dialog-modal-" + code ).dialog({
-	      height: 240,
-	      modal: true
+	      width: $(window).width,
+	      modal: true,
+	      position: 'left top'
 	    });  
 
 	    $("#dialog-modal-" + code).load("partials/content-" + code + ".html");
