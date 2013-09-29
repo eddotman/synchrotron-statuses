@@ -1,0 +1,23 @@
+.pink{background:pink;}
+
+.modal{font-family: 'Oxygen', sans-serif;background:#fff;}
+.modal h1{}
+.name{font-size:20px;}
+
+.col{float:left;margin-left:1.6%;}
+
+.col:first-child { margin-left:0; }
+
+.colwhole{width:100%;}
+.col1{width:32.2%;} /*one third*/
+.col2{width:64.1%;} /*two thirds*/
+
+.header{padding-bottom:30px;}
+.header h3, h2{display:inline;}
+
+.header h2{color:#555;}
+.header h3{padding-left:20px;color:#808080;}
+
+
+.col p{padding-left:20px;}
+.col img{padding-left:20px;}
